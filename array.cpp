@@ -27,3 +27,10 @@ int max_index(int* massive, int size) {
     }
     return max_idx;
 }
+int sum(int* massive, int size, int begin, int end) {
+    int sum = 0;
+    for (int i = begin; i <= end; i++) {
+        sum += massive[i];
+    }
+    return sum;
+}

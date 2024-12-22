@@ -10,5 +10,12 @@ int main() {
     i_max = max_index(massive, size);
     std::cout << "i_min: " << i_min << "\ti_max: " << i_max << '\n';
 
+    int _sum{};
+    int begin{}, end{};
+    begin = min(i_min, i_max);
+    end = max(i_min, i_max);
+    _sum = sum(massive, size, begin, end);
+    std::cout << "sum: " << _sum << '\n';
+
     return 0;
 }
